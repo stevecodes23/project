@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>project</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/yourcode.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script scr="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/yourcode.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/5143d46102.js" crossorigin="anonymous"></script>
+
+</head>
+</head>
+<style type="text/css"> 
+.hun{
+	width: 100%;
+	height:100%;
+}
+.twe{
+	width:100%;
+    height: 20%;
+
+}
+#top_logo{
+	margin: 6px 6px 6px 180px;
+	width:60px;
+	height:60px;
+}
+.hello{
+	border-radius: 30px;
+	border: 1px solid #7510f7;
+	font-family: europa;
+	font-size: 18px;
+	color:  #7510f7;
+	height: 50px;
+	width: 100px;
+
+}
+button.hello:hover{
+	height :50px;
+	width:100px;
+	border-radius: 30px;
+	color: white;
+	background-color: #7510f7;
+
+}
+.navy{
+	padding: 20px 30px; 
+	margin: 10px 20px;
+}
+#abc{
+	font-family: europa;
+	color:grey;
+	margin:30px 30px 50px 900px;
+	font-size: 20px;
+}
+.al{
+	display:block;
+	text-align: center;
+	margin: 30px auto 0px auto;
+}
+.all{
+	color: grey;
+	padding-bottom: 30px;
+
+}
+.pop{
+	color:#7510f7;
+	padding-bottom: 30px;
+}
+.parent{
+}
+.child{ 
+	padding: 140px;
+	background-color:#7510f7;
+	color: white; 
+}
+.child2{
+	text-align: center;
+	margin:100px;
+	transform: translate(0px,-150px);
+	box-sizing: 1200px 900px;
+
+}
+.child2 .col-lg-4 {
+	margin: 0px;
+}
+table{
+	margin: 0px 80px;
+	background-color: rgba(242, 242, 242,1);
+	border-radius: 30px;
+
+
+}
+td{ 
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  margin-top: 50px;
+  width: 500px;
+  height: 300px;
+  float: left;
+  padding: 30px;
+  margin: 30px;
+}
+
+.overlay {
+  position: absolute;
+  top: 50;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 40px;
+  transition: background 0.5s ease;
+}
+
+.container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, 1);
+}
+
+.try{
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  left: 0;
+  border-radius: 40px;
+}
+
+
+.container:hover .title {
+  top: 90px;
+}
+
+.but {
+  position: absolute;
+  width: 500px;
+  left:0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  color: white;
+  transition: opacity .35s ease;
+}
+
+.but button {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px #7510f7;
+  z-index: 1;
+  border-radius: 40px;
+  background-color: transparent;
+}
+
+.container:hover .but {
+  opacity: 1;
+
+}
+.but:hower button{
+	background-color: #7510f7;
+	border-radius: 40px;
+	color: white;
+}
+
+.fo{
+	font-weight:bolder;
+	margin-top: 40px;
+}
+.abc{
+	color:#7510f7;
+	border:5px solid #7510f7;
+	border-radius: 50px;
+	padding: 10px;
+}
+.abc:hover {
+	color:white;
+	background-color: #7510f7;
+}
+
+.pop{
+	margin: 100px auto;
+	padding: 50px auto;
+}
+
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+.brand-area{
+    padding: 1rem 20rem;
+    margin-bottom: 4rem;
+}
+.brand-area .first-row .col-lg-3{
+    display: flex;
+    justify-content: center;
+}
+
+.brand-area .first-row .col-lg-3 > .single-brand{
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.brand-area .first-row .col-lg-3 > .single-brand > img{
+    width: 100%;
+}
+.back{
+	background-color: #7510f7;
+	color: white ;
+	text-align: center;
+	padding: 200px;
+}
+.sec{
+	margin: 100px 0px;
+}
+.cont{
+  padding: 2px 16px;
+}
+.card{
+	border-radius: 10px;
+	border:3px solid rgba(128,128,128,.3);
+	margin: 40px 10px ;
+
+}
+.card img{
+	padding:10px auto;
+}
+.backen{
+	padding-top:20px;
+	transform: translate(0px,-120px);
+}
+.mof{
+	text-align: center;
+	margin: 50px;
+	padding: 50px ;
+}
+.mof p {
+	padding: 40px;
+	font-size: 20px;
+}
+.dep{
+	text-align: center ;
+	margin-bottom: 80px; 
+
+}
+.dep h1{
+	font-weight: bolder;
+	padding: 60px 30px 20px 30px;
+}
+.dep img{
+	border-radius: 50%;
+	margin: auto;
+	width: 80px;
+	height: 80px;
+}
+.dep h4{
+	font-weight: bolder;
+	padding-top: 20px;
+
+}
+.deppy{
+	font-size: 15px;
+	color: grey;
+	padding: 0px 30px 60px 30px;
+}
+.peppy{
+font-size: 30px;
+ padding: 10px;
+}
+.appy{
+	background-color: #000066;
+	color: white ;
+	text-align: center;
+	height: 180px;
+	padding: 20px;
+	border-radius: 30px;
+}
+.appy button {
+	background-color: #000066;
+	color: white;
+	border-radius: 30px;
+	border:2px solid #7510f7;
+	margin: 40px auto;
+	font-size: 20px;
+	padding: 20px;
+
+}
+.appy button:hover{
+	background-color: #7510f7;
+	color: white;
+}
+.fat{
+	font-weight: bolder;
+	font-size: 40px;
+	padding-top: : 50px;
+}
+.fatty{
+	font-weight: bold;
+	font-size: 15px;
+	padding: 20px;
+}
+.foot{
+	 text-align: center;
+	margin: 20px 0px;
+	background-color: #7510f7;
+	height: 700px;
+}
+.footy img{
+	padding: 180px auto 40px auto;
+	margin: 180px auto 40px auto;
+}
+.footy p{
+	font-size: 30px;
+	color:white;
+	opacity: 0.5;
+}
+
+.pep{
+	margin: 5px;
+	border-radius: 50%;
+	border:2px solid rgba(255,255,255,.5);
+	padding: 20px;
+	font-size:30px; 
+	background-color: #7510f7;
+	color: white;
+	}
+.pep:hover{
+	background-color: white;
+	color:#7510f7; 
+}
+.last{
+	color: rgba(255,255,255,.5);
+	padding: 60px;
+	font-size: 15px;
+
+}
+.tom{
+	transform: translate(250px,-800px);
+}
+
+</style>
+
+</head>
+
+<body>
+	<nav class="navbar navy">
+		<ul>
+				<a ><img src="img/mf-logo.svg" id="top_logo"></a>
+		
+		<button class="hello" style="float: right;" >say hello </button>
+		<span id="abc" >Mentorship</span>
+	
+	</ul>
+</nav>
+	<section >
+		<h1 style="text-align: center;font-weight: bold;margin: 40px 0px">
+			Designer, Front-end Developer & Mentor
+		</h1>
+	 <p style="text-align: center; font-family: europa;font-size: 20px;color:grey;margin: 30px 0px;">
+	 	I design and code beautifully simple things, and I love what I do.
+	 </p>
+	 <img src="img/mf-avatar.svg" class="al">
+	 <br>
+	 <img src="img/hero.svg" class="al" style="margin-bottom: 0px;">	
+	</section >
+	</div>
+ <hr><br>
+ <section>
+ 	<div class="col-lg-12">
+ 		<div class="child">
+ 			<h1 style="font-size: 20px;text-align:center;padding: 60px auto 60px auto;">Hi, I’m Matt. Nice to meet you.</h1>
+
+		<p style="text-align: center;">Since beginning my journey as a freelance designer 10 years ago, I've done remote <br>work for agencies, consulted for startups, and collaborated with talented people to create  <br> digital products for both business and consumer use. I'm quietly confident, naturally curious, <br> and perpetually working on improving my chops one design problem at a time.</p>
+
+ 		</div>
+ 		   <div class="child2">
+ 		    <table>
+ 		    	<tr>
+ 		    		<td class="" style=""> <div class="">
+ 		     	 	<div class="" style=" ">
+				<img style="margin-top: 30px;" src="img/designer.svg">
+				<h1 style="padding: 20px;">Designer</h1>
+				<p class="all">
+					I value simple content structure, clean <br>design patterns, and thoughtful <br> interactions.
+				</p>
+				<h2 class="pop">Things I enjoy designing:</h2>
+				<p class="all">
+					UX, UI, Web, Mobile, Apps, Logos
+				</p>
+				<ul class="all" type="none">
+					<li class="pop">Design tools :</li>
+					<li>Balsamiq Mockups</li>
+					<li>Figma</li>
+					<li>Invision</li>
+					<li>Marvel</li>
+					<li>Pen & Paper</li>
+					<li>Sketch</li>
+					<li>Webflow</li>
+					<li>Zepin</li>
+				</ul>
+
+			</div>
+ 		     	 </div>
+ 		    			
+ 		    		</td>
+
+                      <td style="">
+                      	<div class="" style="margin:0px; ">
+ 		     	   	 <div class="" style="">
+				<img style="margin: 30px auto; " src="img/frontend.svg">
+				<h1 style="padding: 20px;">Front-end developer</h1>
+				<p class="all">
+					II like to code things from scratch, and <br> enjoy bringing ideas to life in the <br> browser.
+				<h2 class="pop">Languages I speak</h2>
+				<p class="all">
+					HTML, Pug, Slim, CSS, Sass, Less
+				</p>
+				<ul class="all" type="none">
+					<li class="pop">Dev tools :</li>
+					<li>Atoms</li>
+					<li>Bitbucket</li>
+					<li>bootstrap</li>
+					<li>Bulma</li>
+					<li>codekit</li>
+					<li>codepen</li>
+					<li>github</li>
+					<li>gitlab</li>
+					<li>terminal</li>
+				</ul>
+
+			</div>
+ 		     	   </div>
+                      	
+                      </td>
+                      <td>
+
+                       <div class="">
+                       	<div class="" style="">
+				<img style="margin-top: 30px;" src="img/mentor.svg">
+				<h1>Mentor</h1>
+				<p class="all">
+					I genuinely care about people, and love <br> helping fellow designers work on their <br> craft.
+				<h2 class="pop">Experiences i draw from</h2>
+				<p class="all">
+					UX/UI, Product design, Freelancing
+				</p>
+				<ul class="all" type="none">
+					<li class="pop">Mentor stats :</li>
+					<li>5 years experience </li>
+					<li>26 short courses </li>
+					<li>42 bootcamps</li>
+					<li>125+students </li>
+					<li>1,400+ mentor sesions </li>
+					<li>60+ group sesions</li>
+					<li>12,000+ comments</li>
+				</ul>
+
+			</div>
+                       </div>
+                      	
+                      </td>
+
+
+ 		    	</tr>
+ 		    </table>
+ 	     </div>
+ 	 </div>
+ </section>
+ <hr>
+
+ 
+<section style="text-align: center;">
+ 	<h1 class="fo">My Recent Work</h1>
+ 	<p  style="display: block ;margin: 30px auto;">Here are a few design projects I've worked on recently. Want to see more?<a style="color: #7510f7;;"href="">Email me </a> </p>
+
+
+<div class="container">
+ <img src="img/img_snow.jpg" class="try">
+  <div class="overlay"></div>
+  <div class="but">
+  	<p >some text for website </p>
+  	<button class="abc"> button</button>
+  </div>
+</div>
+
+
+<div class="container">
+ <img src="img/img_snow.jpg" class="try">
+  <div class="overlay"></div>
+  <div class="but">
+  	<p >some text for website </p>
+  	<button class="abc"> button</button>
+  </div>
+</div>
+
+
+<div class="container">
+ <img src="img/img_snow.jpg" class="try">
+  <div class="overlay"></div>
+  <div class="but">
+  	<p >some text for website </p>
+  	<button class="abc"> button</button>
+  </div>
+</div>
+<div style="clear: both;"></div>
+
+<div class="container">
+ <img src="img/img_snow.jpg" class="try">
+  <div class="overlay"></div>
+  <div class="but">
+  	<p >some text for website </p>
+  	<button class="abc"> button</button>
+  </div>
+</div>
+
+<div class="container">
+ <img src="img/img_snow.jpg" class="try">
+  <div class="overlay"></div>
+  <div class="but">
+  	<p >some text for website </p>
+  	<button class="abc"> button</button>
+  </div>
+</div>
+
+
+<div class="container">
+ <img src="img/img_snow.jpg" class="try">
+  <div class="overlay"></div>
+  <div class="but">
+  	<p >some text for website </p>
+  	<button class="abc"> button</button>
+  </div>
+</div>
+<div style="clear: both;"></div>
+
+<div class="container-fluid pop"> 
+	<button class="abc"><i class="fas fa-basketball-ball" ></i> see on dribble </button></div>
+ 	
+ </section> <div style="clear: both">
+ 	
+ </div>
+
+ <hr>
+<!--<section>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="img/redstamp.svg" alt="" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="">
+      <img src="img/redstamp.svg" alt="" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="">
+      <img src="img/redstamp.svg" alt="" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="">
+      <img src="img/redstamp.svg" alt="" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+	
+	</section>
+-->
+<section>
+	   <section class="brand-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12 ">
+                        <div class="first-row row">
+                            <div class="col-lg-3 ">
+                                <div class="single-brand">
+                                    <img src="img/redstamp.svg" alt="Brand-1 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="single-brand">
+                                    <img src="img/redstamp.svg" alt="Brand-2 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="single-brand">
+                                    <img src="img/redstamp.svg" alt="Brand-3 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="single-brand">
+                                    <img src="img/redstamp.svg" alt="Brand-4">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="single-brand">
+                                    <img src="img/redstamp.svg" alt="Brand-5 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="single-brand">
+                                    <img src="img/redstamp.svg" alt="Brand-6">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="single-brand">
+                                    <img src="img/redstamp.svg" alt="Brand-7 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="single-brand">
+                                    <img src="img/redstamp.svg" alt="Brand-8 ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="clear: both;"></div>
+</section>
+
+<br> 
+<hr>
+
+	<section class="sec">
+		<div class="container-fluid back">
+			<div class="col-xl-12">
+				<h1>
+					My Startup Projects 
+				</h1>
+				<p>
+					I'm a bit of a digital product junky. Over the years, I've used hundreds of web and mobile
+					<br>
+					apps in different industries and verticals. Eventually, I decided that it would be a fun
+					<br>
+					challenge to try designing and building my own.
+				</p>
+				
+			</div>
+		</div>
+		<div class="container-fluid backen">
+			<div class="col-xl-12" style="text-align: center;">
+				<div class="col-lg-4">
+					<div class="card">
+  <img src="img/kybercore.svg" alt="Avatar" style="width:60%;height: 50px; margin:10px 90px; ">
+  <div class="cont sec cont">
+    <p>
+    	Next level plug and play chassis<br> systems for custom do-it-yourself<br> lightsaber builds.
+    </p>  
+     <br>
+     <a href="" style="color:#7510f7;"class="">some website link</a>
+                   </div>
+                 </div>
+						
+				</div>
+				
+
+<div class="col-lg-4">
+					<div class="card">
+  <img src="img/kybercore.svg" alt="Avatar" style="width:60%;height: 50px; margin:10px 90px;">
+  <div class="cont sec cont">
+    <p>
+    	Next level plug and play chassis<br> systems for custom do-it-yourself<br> lightsaber builds.
+    </p>  
+     <br>
+     <a href="" style="color:#7510f7;"> some website link</a>
+                   </div>
+                 </div>
+						
+				</div>
+
+
+				<div class="col-lg-4">
+					<div class="card">
+  <img src="img/kybercore.svg" alt="Avatar" style="width:60%;height: 50px; margin:10px 90px;">
+  <div class="cont sec cont">
+    <p>
+    	Next level plug and play chassis<br> systems for custom do-it-yourself<br> lightsaber builds.
+    </p>  
+     <br>
+     <a href="" style="color:#7510f7;"> some website link</a>
+                   </div>
+                 </div>
+						
+				</div>
+
+
+			</div>
+					<div class="col-xl-12" style="text-align: center;">
+				<div class="col-lg-4">
+					<div class="card">
+  <img src="img/kybercore.svg" alt="Avatar" style="width:60%;height: 50px; margin:10px 90px; ">
+  <div class="cont sec cont">
+    <p>
+    	Next level plug and play chassis<br> systems for custom do-it-yourself<br> lightsaber builds.
+    </p>  
+     <br>
+     <a href="" style="color:#7510f7;"> some website link</a>
+                   </div>
+                 </div>
+						
+				</div>
+				
+
+<div class="col-lg-4">
+					<div class="card">
+  <img src="img/kybercore.svg" alt="Avatar" style="width:60%;height: 50px; margin:10px 90px;">
+  <div class="cont sec cont">
+    <p>
+    	Next level plug and play chassis<br> systems for custom do-it-yourself<br> lightsaber builds.
+    </p>  
+     <br>
+     <a href="" style="color:#7510f7;"> some website link</a>
+                   </div>
+                 </div>
+						
+				</div>
+
+
+				<div class="col-lg-4">
+					<div class="card">
+  <img src="img/kybercore.svg" alt="Avatar" style="width:60%;height: 50px; margin:10px 90px;">
+  <div class="cont sec cont">
+    <p>
+    	Next level plug and play chassis<br> systems for custom do-it-yourself<br> lightsaber builds.
+    </p>  
+     <br>
+     <a href="" style="color:#7510f7;"> some website link</a>
+                   </div>
+                 </div>
+						
+				</div>
+
+
+			</div>
+
+
+
+
+
+		</div>
+	</div>
+	</section>
+	<hr>
+	<section>
+		<div class="mof">
+			<h1>
+				Interested in collaborating or investing?
+			</h1>
+			<p style="color: grey;">I’m always open to discussing product design work or partnership opportunities.</p>
+			<br>
+			<button class="abc"> start a conversation </button>
+		</div>
+	</section>
+	<hr>
+	<section>
+		<div class="dep">
+			<h1>Testimonials </h1>
+			<p class="deppy">People I've worked with have said some nice things...</p>
+			<img src="img/pascal.png"><br>
+			<p class="peppy">“Matt was a real pleasure to work with and we look forward to <br>working with him again. He’s definitely the kind of designer you can <br> trust with a project from start to finish.”
+
+Pascal Tremblay<br></p>
+          <h4 >Pascal Tremblay</h4>
+          <p style="padding-top: 5px;color: grey;">Creative Lead, Good Kind</p>
+    
+			
+		</div>
+	</section>
+
+
+<footer class="">
+	<div class="col-lg-12 foot">
+		<div class="footy">
+			<img src="img/mf-logo-white.svg">
+			<p>Living, learning, & leveling up <br> one day at a time.</p>
+			<div><button class="pep"> <i class="fa fa-twitter"></i></button class="pep"> <button class="pep" ><i class="fa fa-futbol-o"></i></button><button class="pep" ><i class="fa fa-linkedin"></i></button><button class="pep"><i class="fa fa-hand-o-up"></i></button> <button class="pep"><i class="fa fa-product-hunt"></i></button><button class="pep"><i class="fa fa-envelope-o"></i></button></div>
+
+		</div>
+		<div class="last">
+			<p class=""> Handcrafted by<i class="far fa-copyright"></i> metwentytwenty
+              <br>
+             <small> Made with </small> <big>Bulma<i class="fas fa-horse-head"></i></big>
+			</p>
+			
+		</div>
+	</div>
+</footer>
+<section class="tom">
+	<div class="col-lg-8 appy">
+		<div class="col-lg-4">
+			<div class="fat">
+				<p>Start a project</p>
+			</div>
+			
+		</div>
+		<div class="col-lg-4">
+			<div class="fatty">
+				<p>
+					Interested in working together? We should<br> queue up a chat. I’ll buy the coffee.
+				</p>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<button class=""> lets do this </button>
+		</div>
+	</div>
+</section>
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+div class="child2 row" >
+ 		     	 <div class="col col-lg-4">
+ 		     	 	<div class="" style="border: 2px solid grey;border-radius: 30px 0px 0px 30px;">
+				<img style="margin-top: 30px;" src="img/designer.svg">
+				<h1 style="padding: 20px;">Designer</h1>
+				<p class="all">
+					I value simple content structure, clean <br>design patterns, and thoughtful <br> interactions.
+				</p>
+				<h2 class="pop">Things I enjoy designing:</h2>
+				<p class="all">
+					UX, UI, Web, Mobile, Apps, Logos
+				</p>
+				<ul class="all" type="none">
+					<li class="pop">Design tools :</li>
+					<li>Balsamiq Mockups</li>
+					<li>Figma</li>
+					<li>Invision</li>
+					<li>Marvel</li>
+					<li>Pen & Paper</li>
+					<li>Sketch</li>
+					<li>Webflow</li>
+					<li>Zepin</li>
+				</ul>
+
+			</div>
+ 		     	 </div>
+ 		     	   <div class="col col-lg-4" style="margin:0px; ">
+ 		     	   	 <div class="" style="border: 2px solid grey;">
+				<img style="margin-top: 30px;" src="img/frontend.svg">
+				<h1 style="padding: 20px;">Front-end developer</h1>
+				<p class="all">
+					II like to code things from scratch, and <br> enjoy bringing ideas to life in the <br> browser.
+				<h2 class="pop">Languages I speak</h2>
+				<p class="all">
+					HTML, Pug, Slim, CSS, Sass, Less
+				</p>
+				<ul class="all" type="none">
+					<li class="pop">Dev tools :</li>
+					<li>Atoms</li>
+					<li>Bitbucket</li>
+					<li>bootstrap</li>
+					<li>Bulma</li>
+					<li>codekit</li>
+					<li>codepen</li>
+					<li>github</li>
+					<li>gitlab</li>
+					<li>terminal</li>
+				</ul>
+
+			</div>
+ 		     	   </div>
+
+                       <div class="col col-lg-4">
+                       	<div class="" style="border: 2px solid grey;border-radius: 0px 30px 30px 0px;">
+				<img style="margin-top: 30px;" src="img/mentor.svg">
+				<h1>Mentor</h1>
+				<p class="all">
+					I genuinely care about people, and love <br> helping fellow designers work on their <br> craft.
+				<h2 class="pop">Experiences i draw from</h2>
+				<p class="all">
+					UX/UI, Product design, Freelancing
+				</p>
+				<ul class="all" type="none">
+					<li class="pop">Mentor stats :</li>
+					<li>5 years experience </li>
+					<li>26 short courses </li>
+					<li>42 bootcamps</li>
+					<li>125+students </li>
+					<li>1,400+ mentor sesions </li>
+					<li>60+ group sesions</li>
+					<li>12,000+ comments</li>
+				</ul>
+
+			</div>
+                       </div>
+
+
+
+ 		     </div> -->
